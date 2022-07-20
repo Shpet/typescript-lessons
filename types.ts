@@ -1,4 +1,4 @@
-// for compile -> #tsc types 
+// for compile -> #tsc types
 
 const isLoading: boolean = false;
 
@@ -38,3 +38,12 @@ type ID = string | number;
 
 const _id1: ID = 23;
 const _id2: ID = '23412';
+
+type MyType = 'Only' | 'This' | 'Value';
+
+function getMessage(msg: MyType) {
+  console.log(msg);
+}
+
+getMessage('This');
+// getMessage('qwe'); error
